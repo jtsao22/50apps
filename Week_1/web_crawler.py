@@ -71,7 +71,7 @@ if __name__ == "__main__":
         Warning: This program may take a long time depending on the number of
         links in each page and the depth! """
     url = 'http://jtsao22.wordpress.com'
-    depth = 5
+    depth = 2
     search_text = 'Found'
     urls_with_search_text = []
 
