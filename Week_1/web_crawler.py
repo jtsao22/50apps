@@ -70,9 +70,12 @@ if __name__ == "__main__":
     """ Example url, depth, and search_text
         Warning: This program may take a long time depending on the number of
         links in each page and the depth! """
-    url = 'http://jtsao22.wordpress.com'
-    depth = 5
-    search_text = 'Found'
+    #url = 'http://jtsao22.wordpress.com'
+    url = 'http://www.registrar.ucla.edu/schedule/detselect.aspx?termsel=12W&subareasel=EL+ENGR&idxcrs=0188++++'
+    depth = 2
+    #search_text = 'Found'
+    #search_text = 'Closed'
+    search_text = 'Open'
     urls_with_search_text = []
 
     find_urls_with_search_text(url, depth, search_text, urls_with_search_text);
