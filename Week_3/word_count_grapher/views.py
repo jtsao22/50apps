@@ -11,7 +11,7 @@ import word_counter
 
 class WordCountForm(forms.Form):
     """ This form simply asks for a url to feed to the word counter/grapher """
-    url = forms.CharField(required=True)
+    url = forms.URLField(required=True)
 
 def word_count_index(request):
     """ This view shows the form """
@@ -28,7 +28,6 @@ def word_count_results(request):
 
         logging.info("URL: " + str(url))
 
-        url = "http://jtsao22.wordpress.com"
         word_counts = word_counter.parse_website(url)
 
         # Get top 10 highest count words
