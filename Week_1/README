@@ -1,0 +1,15 @@
+Problem Statement: 
+
+App Category: Networking 
+DB: None 
+
+Simple part: 
+Create a web crawler app in python which, given a url seed, can crawl through all links on the page and scan deep for a given level of depth. While crawling the app should be able to return the url page containing a specific search text.
+
+Input: 
+1 - Url seed e.g. www.hackernews.com 
+2 - Depth e.g. 5 (this means go into links on a page till 5 levels) 
+3 - search text e.g. "python" 
+
+Output: 
+the list of url that contains the specified text The Simple part is mandatory to be completed. 
