@@ -1,0 +1,18 @@
+Problem Statement: 
+
+App Category: Text Parsing and 2D Graphics 
+DB: None (Use any DB for complex part)
+
+Simple part: 
+- Use the Python website that you created in week 2 assignment. 
+- Accept a url as input
+- Read page content of the url 
+- Split the content into words and find out the number of occurences of every word in the page.
+- Do not consider the following words: a, an, the, on, in, for, and, to
+- Show a simple bar graph on the ui showing the top 10 words with respective count (X axis - words, Y axis - height of
+  the bar as per count of word in page) (Do this using HTML5. Add whatever transitions or effects if you want to
+  beautify it)
+  - Also find out the longest and the shortest word in the page and mention in UI. (Longest and shortest - as per number
+    of characters in a word)
+  ONE BIG CONDITION - YOU CANNOT USE ANY LOOPING CONSTRUCTS LIKE FOR AND WHILE. (Hint: use map and lambda expressions)
+  Try to use map, filter, reduce functionality of Python. Explore use of lambda, pure functions, generators, etc.
