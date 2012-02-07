@@ -1,0 +1,7 @@
+Problem Statement: 
+
+App Category: Networking/Web Application 
+DB: None (Use any DB for complex part)
+
+Simple part: 
+Develop a web application using Python. You can use any Web framework if you want to. The website should use the web crawler application you created in Week 1, as a backend tool. The site will have a home page that will ask the user for a URL seed, depth of crawling and a search string. On click of Search button, it should show the results in a tabular form. The results should show the URL's whose page content contains search string and also the depth at which the URL is found. Preferably host this site in google app engine. It's free and supports Python. If you have difficulties hosting it, you can submit only the code.
