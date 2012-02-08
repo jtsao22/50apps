@@ -24,22 +24,18 @@ def word_count_results(request):
     form = WordCountForm(request.POST)
     c = {}
     if form.is_valid():
+        # Get url and find the word counts
         url = form.cleaned_data['url']
-
-        logging.info("URL: " + str(url))
-
         word_counts = word_counter.parse_website(url)
 
-        # Get top 10 highest count words
+        # Get top 10 highest count words and store in words and
+        #   num_occurrences list
         top10 = word_counter.get_top_10(word_counts)
         words = []
         num_occurrences  = []
         for key, val in top10:
             words.append(key)
             num_occurrences.append(val)
-
-        print "WORDS: " + str(words)
-
         c.update({'words': words})
         c.update({'num_occurrences': num_occurrences})
 

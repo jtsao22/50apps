@@ -1,6 +1,5 @@
 import urllib2
 import operator
-#from google.appengine.api import urlfetch
 from sgmllib import SGMLParser
 
 ##############################################################################
